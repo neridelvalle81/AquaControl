@@ -18,5 +18,12 @@ class ListTitular extends ListController
     protected function createViews()
     {
         $this->addView('ListTitular', 'Titular', 'Titulares', 'fa-solid fa-user');
+        $this->addSearchFields('ListTitular', ['nombre', 'documento', 'telefono']);
+        $this->addOrderBy('ListTitular', ['nombre'], 'Nombre');
+    }
+
+    protected function loadData($viewName, $view)
+    {
+        // Método requerido - puede estar vacío
     }
 }

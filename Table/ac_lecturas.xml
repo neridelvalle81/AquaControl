@@ -6,15 +6,14 @@
             <values source="\FacturaScripts\Plugins\AquaControl\Model\Medidor" fieldcode="id" fieldtitle="numero"/>
         </column>
         <column name="fecha" type="date" widget="date" required="true"/>
-        <column name="lectura_anterior" type="int" widget="number" decimal="0" required="true"/>
-        <column name="lectura_actual" type="int" widget="number" decimal="0" required="true"/>
+        <column name="lectura_anterior" type="int" widget="number" decimal="0"/>
+        <column name="lectura_actual" type="int" widget="number" decimal="0"/>
         <column name="consumo" type="int" widget="number" decimal="0" readonly="true"/>
         <column name="estado" type="varchar" size="20" widget="select">
             <values>
                 <value code="pendiente">Pendiente</value>
                 <value code="confirmada">Confirmada</value>
                 <value code="anomalia">Anomalía</value>
-                <value code="rechazada">Rechazada</value>
             </values>
         </column>
         <column name="observaciones" type="text" widget="textarea"/>

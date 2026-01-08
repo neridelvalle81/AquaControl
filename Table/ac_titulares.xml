@@ -5,7 +5,7 @@
         <column name="codcliente" type="varchar" size="10" widget="select">
             <values source="\FacturaScripts\Core\Model\Cliente" fieldcode="codcliente" fieldtitle="nombre"/>
         </column>
-        <column name="codigo" type="varchar" size="20" widget="text" description="Código interno"/>
+        <column name="codigo" type="varchar" size="20" widget="text"/>
         <column name="nombre" type="varchar" size="150" widget="text" required="true"/>
         <column name="documento" type="varchar" size="30" widget="text"/>
         <column name="telefono" type="varchar" size="50" widget="text"/>

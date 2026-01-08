@@ -3,20 +3,26 @@ namespace FacturaScripts\Plugins\AquaControl\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
-class ListSuministro extends ListController
+class ListMedidor extends ListController
 {
     public function getPageData(): array
     {
         $data = parent::getPageData();
-        $data['title'] = 'Suministros';
+        $data['title'] = 'Medidores';
         $data['menu'] = 'AquaControl';
-        $data['icon'] = 'fa-solid fa-faucet';
+        $data['icon'] = 'fa-solid fa-gauge';
         $data['showonmenu'] = true;
         return $data;
     }
 
     protected function createViews()
     {
-        $this->addView('ListSuministro', 'Suministro', 'Suministros', 'fa-solid fa-faucet');
+        $this->addView('ListMedidor', 'Medidor', 'Medidores', 'fa-solid fa-gauge');
+        $this->addSearchFields('ListMedidor', ['numero', 'marca']);
+    }
+
+    protected function loadData($viewName, $view)
+    {
+        // Método requerido
     }
 }

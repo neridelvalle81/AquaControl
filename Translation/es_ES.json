@@ -4,7 +4,6 @@
     "suministros": "Suministros",
     "medidores": "Medidores",
     "lecturas": "Lecturas",
-    "dashboard": "Panel de control",
     "codcliente": "Cliente",
     "idtitular": "Titular",
     "idsuministro": "Suministro",
@@ -30,11 +29,7 @@
     "residencial": "Residencial",
     "comercial": "Comercial",
     "industrial": "Industrial",
-    "institucional": "Institucional",
     "pendiente": "Pendiente",
     "confirmada": "Confirmada",
-    "anomalia": "Anomalía",
-    "rechazada": "Rechazada",
-    "fecha-requerida": "La fecha es requerida",
-    "lectura-actual-menor-anterior": "La lectura actual no puede ser menor a la anterior"
+    "anomalia": "Anomalía"
 }

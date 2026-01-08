@@ -2,7 +2,6 @@
 namespace FacturaScripts\Plugins\AquaControl\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\EditController;
-use FacturaScripts\Plugins\AquaControl\Model\Medidor;
 
 class EditMedidor extends EditController
 {

@@ -2,7 +2,6 @@
 namespace FacturaScripts\Plugins\AquaControl\Controller;
 
 use FacturaScripts\Core\Lib\ExtendedController\EditController;
-use FacturaScripts\Plugins\AquaControl\Model\Suministro;
 
 class EditSuministro extends EditController
 {

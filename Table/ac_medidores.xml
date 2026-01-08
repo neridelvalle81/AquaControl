@@ -13,7 +13,6 @@
                 <value code="activo">Activo</value>
                 <value code="averiado">Averiado</value>
                 <value code="retirado">Retirado</value>
-                <value code="reparacion">En reparación</value>
             </values>
         </column>
         <column name="activo" type="bool" widget="checkbox" default="1"/>

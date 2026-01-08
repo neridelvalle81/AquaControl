@@ -18,5 +18,11 @@ class ListLectura extends ListController
     protected function createViews()
     {
         $this->addView('ListLectura', 'Lectura', 'Lecturas', 'fa-solid fa-list');
+        $this->addSearchFields('ListLectura', ['estado']);
+    }
+
+    protected function loadData($viewName, $view)
+    {
+        // Método requerido
     }
 }

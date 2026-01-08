@@ -1,9 +1,9 @@
 <?php
 namespace FacturaScripts\Plugins\AquaControl\Controller;
 
-use FacturaScripts\Core\Lib\ExtendedController\PanelController;
+use FacturaScripts\Core\Lib\ExtendedController\ListController;
 
-class HomeAquaControl extends PanelController
+class HomeAquaControl extends ListController
 {
     public function getPageData(): array
     {
@@ -17,21 +17,12 @@ class HomeAquaControl extends PanelController
 
     protected function createViews()
     {
-        // Panel de inicio/dashboard
-        // $this->addHtmlView('Dashboard', 'Dashboard', 'Home', 'dashboard');
-        // Temporalmente vacío hasta crear la vista
+        $this->addView('ListTitular', 'Titular', 'Titulares', 'fa-solid fa-user');
+        $this->addSearchFields('ListTitular', ['nombre', 'documento']);
     }
 
     protected function loadData($viewName, $view)
     {
-        // Método requerido por BaseController
-        switch ($viewName) {
-            // Puedes cargar datos específicos para cada vista aquí
-        }
-    }
-
-    public function execAfterAction($action)
-    {
-        parent::execAfterAction($action);
+        // Método requerido
     }
 }
