@@ -1,0 +1,27 @@
+AquaControl/
+├── Controller/
+│   ├── HomeAquaControl.php
+│   ├── ListTitular.php
+│   ├── EditTitular.php
+│   ├── ListSuministro.php
+│   ├── EditSuministro.php
+│   ├── ListMedidor.php
+│   ├── EditMedidor.php
+│   ├── ListLectura.php
+│   └── EditLectura.php
+├── Model/
+│   ├── Titular.php
+│   ├── Suministro.php
+│   ├── Medidor.php
+│   └── Lectura.php
+├── Table/
+│   ├── ac_titulares.xml
+│   ├── ac_suministros.xml
+│   ├── ac_medidores.xml
+│   └── ac_lecturas.xml
+├── Translation/
+│   └── es_ES.json
+├── Init.php
+├── facturascripts.ini
+├── LICENSE.md
+└── README.md
