@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <column name="id" type="int" display="none"/>
+        <column name="codcliente" type="varchar" size="10" widget="select">
+            <values source="\FacturaScripts\Core\Model\Cliente" fieldcode="codcliente" fieldtitle="nombre"/>
+        </column>
+        <column name="codigo" type="varchar" size="20" widget="text" description="Código interno"/>
+        <column name="nombre" type="varchar" size="150" widget="text" required="true"/>
+        <column name="documento" type="varchar" size="30" widget="text"/>
+        <column name="telefono" type="varchar" size="50" widget="text"/>
+        <column name="direccion" type="text" widget="textarea"/>
+        <column name="observaciones" type="text" widget="textarea"/>
+        <column name="activo" type="bool" widget="checkbox" default="1"/>
+        <column name="created_at" type="datetime" widget="datetime" display="none"/>
+        <column name="updated_at" type="datetime" widget="datetime" display="none"/>
+    </columns>
+</view>

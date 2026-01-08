@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <column name="id" type="int" display="none"/>
+        <column name="idtitular" type="int" widget="select">
+            <values source="\FacturaScripts\Plugins\AquaControl\Model\Titular" fieldcode="id" fieldtitle="nombre"/>
+        </column>
+        <column name="codigo" type="varchar" size="30" widget="text" description="Número de suministro"/>
+        <column name="direccion" type="text" widget="textarea"/>
+        <column name="tarifa" type="varchar" size="20" widget="select">
+            <values>
+                <value code="residencial">Residencial</value>
+                <value code="comercial">Comercial</value>
+                <value code="industrial">Industrial</value>
+                <value code="institucional">Institucional</value>
+            </values>
+        </column>
+        <column name="estado" type="varchar" size="20" widget="select">
+            <values>
+                <value code="activo">Activo</value>
+                <value code="suspendido">Suspendido</value>
+                <value code="cortado">Cortado</value>
+                <value code="baja">De baja</value>
+            </values>
+        </column>
+        <column name="observaciones" type="text" widget="textarea"/>
+        <column name="activo" type="bool" widget="checkbox" default="1"/>
+        <column name="created_at" type="datetime" widget="datetime" display="none"/>
+        <column name="updated_at" type="datetime" widget="datetime" display="none"/>
+    </columns>
+</view>
